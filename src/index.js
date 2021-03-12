@@ -2,7 +2,8 @@ const template = document.createElement('template');
 template.innerHTML = `
   <style>
   </style>
-  <span class="change-me"></span>`;
+  <span class="change-me"></span>
+`;
 
 class MyComponent extends HTMLElement {
   constructor() {
