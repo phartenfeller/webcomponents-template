@@ -18,8 +18,9 @@ module.exports = {
     filename: 'index.js',
   },
   devServer: {
-    watchContentBase: true,
-    contentBase: path.resolve(__dirname, 'demo'),
-    open: true,
+    static: {
+      directory: path.join(__dirname, 'demo'),
+      watch: true,
+    },
   },
 };
